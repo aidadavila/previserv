@@ -1,0 +1,32 @@
+
+
+
+{
+    "columns": [
+        {
+            "span": 5,
+            "memberGroups": {
+                "General": {}
+
+            }
+        },
+        {
+            "span": 3,
+            "memberGroups": {
+                "Image":{}
+            }
+        },
+        {
+            "span": 4,
+            "memberGroups": {
+                "Status":{}
+            }
+        },
+
+        {
+            "span": 12,
+            "collections": {}
+        }
+    ],
+    "actions": {}
+}

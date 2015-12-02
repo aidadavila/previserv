@@ -1,0 +1,30 @@
+
+
+{
+    "columns": [
+        {
+            "span": 4,
+            "memberGroups": {
+                "General": {}
+            }
+        },
+        {
+            "span": 4,
+            "memberGroups": {
+                "Deliver To":{}
+            }
+        },{
+            "span": 4,
+            "memberGroups": {
+                "Status":{},
+                "Totals":{}
+            }
+        },
+
+        {
+            "span": 12,
+            "collections": {}
+        }
+    ],
+    "actions": {}
+}
