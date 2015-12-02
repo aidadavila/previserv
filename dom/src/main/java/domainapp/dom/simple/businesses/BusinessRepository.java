@@ -16,6 +16,7 @@ import org.isisaddons.module.security.dom.tenancy.ApplicationTenancyRepository;
 import javax.inject.Inject;
 import java.util.List;
 
+
 @DomainService(repositoryFor = Business.class)
 @DomainServiceLayout(named = "Businesses",menuOrder = "10")
 @DomainObjectLayout(
