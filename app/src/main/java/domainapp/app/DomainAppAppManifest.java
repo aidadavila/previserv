@@ -70,7 +70,7 @@ public class DomainAppAppManifest implements AppManifest {
      */
     @Override
     public String getAuthenticationMechanism() {
-        return "shiro";
+        return "bypass";
     }
 
     /**
@@ -82,7 +82,7 @@ public class DomainAppAppManifest implements AppManifest {
      */
     @Override
     public String getAuthorizationMechanism() {
-        return "shiro";
+        return "bypass";
     }
 
     /**

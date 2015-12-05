@@ -5,6 +5,7 @@ package domainapp.dom.simple.customers;
  */
 
 import domainapp.dom.simple.applications.SubscriptionStatus;
+import domainapp.dom.simple.businesses.UserComment;
 import domainapp.dom.simple.customerorders.ShoppingCart;
 import org.apache.isis.applib.annotation.*;
 import org.apache.isis.applib.services.clock.ClockService;
@@ -156,6 +157,23 @@ public class CustomerSubscription implements Comparable <CustomerSubscription>{
     }
     //endregion
 
+
+    //region > userComments (collection)
+    @Persistent(mappedBy = "customerSubscription", dependentElement = "false")
+    private SortedSet<UserComment> userComments = new TreeSet<UserComment>();
+
+    @CollectionLayout(render = RenderType.EAGERLY)
+    @MemberOrder(sequence = "101")
+    public SortedSet<UserComment> getUserComments() {
+		return userComments;
+	}
+
+	public void setUserComments(SortedSet<UserComment> userComments) {
+		this.userComments = userComments;
+	}
+    //endregion
+
+    
     //region > version (derived property)
     public Long getVersionSequence() {
         return (Long) JDOHelper.getVersion(this);

@@ -419,6 +419,23 @@ public class BusinessLocation implements Comparable<BusinessLocation>, Locatable
 
     //endregion
 
+    //region > userComments (collection)
+    @Persistent(mappedBy = "businessLocation", dependentElement = "false")
+    private SortedSet<UserComment> userComments = new TreeSet<UserComment>();
+
+    @CollectionLayout(render = RenderType.EAGERLY)
+    @MemberOrder(sequence = "201")
+    public SortedSet<UserComment> getUserComments() {
+		return userComments;
+	}
+
+	public void setUserComments(SortedSet<UserComment> userComments) {
+		this.userComments = userComments;
+	}
+    //endregion
+
+    
+
 
     //region > delete (action)
 

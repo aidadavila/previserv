@@ -346,7 +346,7 @@ public class Business implements Comparable<Business>  , Locatable, WithApplicat
     }
     //endregion
 
-    //region > assignImage (action)
+	//region > assignImage (action)
     @MemberOrder(name="BusinessImage",sequence = "1")
     @ActionLayout(position = ActionLayout.Position.PANEL)
     public Business assignImage(
